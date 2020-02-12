@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Today's Look Quiz</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Bangers|Lora:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ae09e0157.js" crossorigin="anonymous"></script>
+    <link type="image/png" href="styles/assets/favicon.png" rel="icon">
+</head>
+<body>
+    <div id="particlesJs"></div>
+        <!-- Header starts here -->
+        <header>
+            <div class="wrapper">
+                <a href="#maincontent" class="skipLink">Skip to main content</a>
+                <h1>What should I wear today?</h1>
+                <p class="intro">I know it's a hassle to figure out what to wear every morning. I don't know what your wardrobe looks like exactly, but once you take this short quiz, you should be able to get some idea as to how to dress today. Good luck finding a perfect look!</p>
+                <button class="start">Start the quiz!</button>
+            </div>
+        </header>
+        <!-- Header ends here -->
+        <!-- Main starts here -->
+        <main id="maincontent" class="miniWrapper">
+            <form action="">
+                <fieldset class="where qContainer">
+                    <h3>1. Where are you going?</h3>
+                    <ul>
+                        <li class="choice">
+                            <input class="option" type="radio" name="where" value="work" id="work" required="required">
+                            <label for="work"><i class="fas fa-building"></i> Work</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="where" value="school" id="school" required="required">
+                            <label for="school"><i class="fas fa-school"></i> School</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="where" value="home" id="home" required="required">
+                            <label for="home"><i class="fas fa-home"></i> Staying Home</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="where" value="goingOut" id="goingOut" required="required">
+                            <label for="goingOut"><i class="fas fa-glass-cheers"></i> Going Out</label>
+                        </li>
+                    </ul>
+                    <div class="whereError error">
+                        <p>Oops! You forgot to tell me where you're heading!</p>
+                    </div>
+                </fieldset>
+                <fieldset id="style" class="style qContainer">
+                    <h3>2. What's your personal fashion style generally?</h3>
+                    <ul>
+                        <li class="choice">
+                            <input class="option" type="radio" name="style" value="trendy" id="trendy" required="required">
+                            <label for="trendy">Trendy</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="style" value="professional" id="professional" required="required">
+                            <label for="professional">Professional</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="style" value="classic" id="classic" required="required">
+                            <label for="classic">Classic</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="style" value="comfy" id="comfy" required="required">
+                            <label for="comfy">Comfy</label>
+                        </li>
+                    </ul>
+                    <div class="styleError error">
+                        <p>Oops! You forgot to tell me your fashion style!</p>
+                    </div>
+                </fieldset>
+                <fieldset id="weather" class="weather qContainer">
+                    <h3>3. What's the weather like today?</h3>
+                    <ul>
+                        <li class="choice">
+                            <input class="option" type="radio" name="weather" value="sunny" id="sunny" required="required">
+                            <label for="sunny"><i class="fas fa-sun"></i> Sunny</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="weather" value="cloudy" id="cloudy" required="required">
+                            <label for="cloudy"><i class="fas fa-cloud"></i> Cloudy</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="weather" value="snowy" id="snowy" required="required">
+                            <label for="snowy"><i class="far fa-snowflake"></i> Snowy</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="weather" value="rainy" id="rainy" required="required">
+                            <label for="rainy"><i class="fas fa-umbrella"></i> Rainy</label>
+                        </li>
+                    </ul>
+                    <div class="weatherError error">
+                        <p>Oops! You forgot to tell me the weather!</p>
+                    </div>
+                </fieldset>
+                <fieldset id="colours" class="colours qContainer">
+                    <h3>4. What kinds of colours do you like to wear?</h3>
+                    <ul>
+                        <li class="choice">
+                            <input class="option" type="radio" name="colours" value="vivid" id="vivid" required="required">
+                            <label for="vivid">Vivid</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="colours" value="pastel" id="pastel" required="required">
+                            <label for="pastel">Pastel</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="colours" value="blackGrey" id="blackGrey" required="required">
+                            <label for="blackGrey">Black/Grey</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="colours" value="whiteBeige" id="whiteBeige" required="required">
+                            <label for="whiteBeige">White/Beige</label>
+                        </li>
+                    </ul>
+                    <div class="colourError error">
+                        <p>Oops! You forgot to tell me your favourite colours!</p>
+                    </div>
+                </fieldset>
+                <fieldset id="gender" class="gender qContainer">
+                    <h3>5. What best describes your gender?</h3>
+                    <ul>
+                        <li class="choice">
+                            <input class="option" type="radio" name="gender" value="male" id="male" required="required">
+                            <label for="male"><i class="fas fa-male"></i> Male</label>
+                        </li>
+                        <li class="choice">
+                            <input class="option" type="radio" name="gender" value="female" id="female" required="required">
+                            <label for="female"><i class="fas fa-female"></i> Female</label>
+                        </li>
+                    </ul>
+                    <div class="genderError error">
+                        <p>Oops! You forgot to tell me your gender!</p>
+                    </div>
+                </fieldset>
+                <button type="submit">What should I wear?</button>
+            </form>
+            
+            <!-- <section id="results" class="results"> -->
+                <h2>Today's look for you!</h2>
+                    <div class="casualM results">
+                        <img class="result" src="styles/assets/casualM.jpg" alt="Man wearing casual clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="casualF results">
+                        <img class="result" src="styles/assets/casualF.jpg" alt="Woman wearing casual clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="fashionableM results">
+                        <img class="result" src="styles/assets/fashionableM.jpg" alt="Man wearing fashionable clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="fashionableF results">
+                        <img class="result" src="styles/assets/fashionableF.jpg" alt="Woman wearing fashionable clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="pajamaM results">
+                        <img class="result" src="styles/assets/pajamaM.jpg" alt="Man wearing a pajama">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="pajamaF results">
+                        <img class="result" src="styles/assets/pajamaF.jpg" alt="Woman wearing a pajama">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="pastelM results">
+                        <img class="result" src="styles/assets/pastelM.jpg" alt="Man wearing pastel-coloured clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="pastelF results">
+                        <img class="result" src="styles/assets/pastelF.jpg" alt="Woman wearing pastel-coloured clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="professionalM results">
+                        <img class="result" src="styles/assets/professionalM.jpg" alt="Man wearing a suit">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="professionalF results">
+                        <img class="result" src="styles/assets/professionalF.jpg" alt="Woman wearing professional clothes">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="rainBootsM results">
+                        <img class="result" src="styles/assets/rainBootsM.jpg" alt="Man wearing rain boots">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="rainBootsF results">
+                        <img class="result" src="styles/assets/rainBootsF.jpg" alt="Woman wearing rain boots">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="snowyM results">
+                        <img class="result" src="styles/assets/snowyM.png" alt="Man wearing snow boots">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="snowyF results">
+                        <img class="result" src="styles/assets/snowyF.png" alt="Woman wearing snow boots">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="sunglassesM results">
+                        <img class="result" src="styles/assets/sunglassesM.jpg" alt="Man wearing sunglasses">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+                    <div class="sunglassesF results">
+                        <img class="result" src="styles/assets/sunglassesF.jpg" alt="Woman wearing sunglasses">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nesciunt!</p>
+                    </div>
+            <!-- </section> -->
+        </main>
+        <!-- Main ends here -->
+        <!-- Footer starts here -->
+        <footer class="wrapper">
+            <button class="toTop">Let me start over!</button>
+            <p>© 2020 Claudia Ahn</p>
+        </footer>
+        <!-- Footer ends here -->
+
+    <!-- <script src="particles.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

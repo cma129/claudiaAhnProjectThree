@@ -1,0 +1,52 @@
+Form including 4 multiple choice Q's with 4 choices
+
+Q1: Where are you going?
+radio button inputs: Work, School, Staying home, Going out
+const user's choice into variable
+
+Q2: What's the weather like today?
+radio button inputs: Sunny, Cloudy, Rainy, Snowy
+const user's choice into variable
+
+Q3: What best describes your gender?
+radio button inputs: Male, Female
+const user's choice into variable
+
+Q4: What's your personal fashion style generally?
+radio button inputs: Trendy, Professional, Classic, Comfortable
+const user's choice into variable
+
+* require user to answer each Q before submitting form 
+- 'You must answer all Q' message when submit button is clicked
+
+* create 8 result image options
+
+IF Statements
+img1: PJ M (Staying home && Male)
+img2: PJ F (Staying home && Female)
+ELSE IF
+img3: rainboots look M (Rainy && Male)
+img4: rainboots look F (Rainy && Female)
+ELSE IF
+img5: snowboots look M (Snowy && Male)
+img6: snowboots look F (Snowy && Female)
+ELSE IF
+img7: casual look M (Male)
+ELSE
+img8: casual look F (Female)
+
+
+* have 1 (based on user's answers) fade in - using if statements
+
+* extra result image options
+....until img6
+ELSE IF
+REPLACE img7: fashionable look M (Trendy, Male)
+REPLACE img8: fashionable look F (Trendy, Female)
+ELSE IF
+img9: professional look M (Professional, Male)
+img10: professional look F (Professional, Female)
+ELSE IF
+img11: casual look M (Male)
+ELSE
+img12: casual look F (Female)
