@@ -1,5 +1,3 @@
-// Todo: github push, photo desc, crop long img
-
 $(document).ready(function(){
 
     $('.start').on('click', function(e){

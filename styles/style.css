@@ -354,8 +354,8 @@ html {
 }
 
 html {
-  font-family: 'Dosis', sans-serif;
-  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
   text-align: center;
   color: #0055b6;
   background-color: #ffb997;
@@ -422,13 +422,20 @@ h1 {
   font-size: 70px;
 }
 
-.intro {
-  line-height: 45px;
+.intro,
+.results p {
+  line-height: 40px;
   color: #0055b6;
   font-style: italic;
-  font-size: 25px;
+  font-size: 22px;
   width: 70%;
   margin: 0 auto;
+}
+
+.results p {
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .miniWrapper {
@@ -445,7 +452,7 @@ form {
   background: #f0f0f0;
   border: none;
   border-radius: 15px;
-  margin: 70px 0;
+  margin: 170px 0;
 }
 
 h3 {
@@ -512,7 +519,7 @@ h2 {
 
 .result {
   margin: 3px auto;
-  width: 350px;
+  height: 520px;
   border-radius: 15px;
   border: 20px solid #f0f0f0;
 }
@@ -534,6 +541,7 @@ footer {
   font-family: 'Bangers', cursive;
   font-size: 23px;
   padding: 10px;
+  margin: 0 0 20px;
 }
 
 footer p {
@@ -543,22 +551,42 @@ footer p {
   color: #0055b660;
 }
 
+@media (max-width: 1385px) {
+  h1 {
+    font-size: 60px;
+  }
+  button {
+    font-size: 28px;
+  }
+  .choice {
+    width: 27%;
+  }
+}
+
 @media (max-width: 1350px) {
+  h1 {
+    font-size: 50px;
+  }
   .miniWrapper {
     width: 80%;
   }
   h3 {
     font-size: 25px;
   }
+  button {
+    font-size: 26px;
+  }
   .choice {
     font-size: 22px;
-    width: 25%;
   }
 }
 
 @media (max-width: 1050px) {
   h1 {
     font-size: 40px;
+  }
+  .intro {
+    font-size: 17px;
   }
   .miniWrapper {
     width: 90%;
@@ -567,13 +595,13 @@ footer p {
     line-height: 30px;
   }
   .choice {
-    width: 35%;
+    width: 28%;
   }
   .error {
     width: 50%;
   }
   button {
-    font-size: 25px;
+    font-size: 24px;
   }
   h2 {
     font-size: 30px;
@@ -581,15 +609,25 @@ footer p {
 }
 
 @media (max-width: 810px) {
+  h1 {
+    font-size: 37px;
+    padding-bottom: 20px;
+  }
   .miniWrapper {
-    width: 100%;
+    width: 95%;
+  }
+  button {
+    font-size: 20px;
+  }
+  .start {
+    width: 50%;
   }
   h3 {
-    font-size: 21px;
+    font-size: 25px;
   }
   .choice {
     font-size: 20px;
-    width: 34%;
+    width: 30%;
   }
   .error {
     font-size: 23px;
@@ -601,8 +639,14 @@ footer p {
   .wrapper {
     width: 90%;
   }
+  h1 {
+    line-height: 40px;
+  }
+  .start {
+    width: 60%;
+  }
   .choice {
-    width: 45%;
+    width: 35%;
   }
   .error {
     left: 52%;
@@ -614,11 +658,15 @@ footer p {
   button {
     font-size: 20px;
   }
+  .start {
+    width: 75%;
+  }
   h2 {
     font-size: 26px;
   }
   .choice {
-    width: 53%;
+    font-size: 17px;
+    width: 55%;
   }
   .error {
     font-size: 20px;
@@ -638,11 +686,15 @@ footer p {
   button {
     padding: 20px 30px;
   }
+  .start {
+    width: 90%;
+  }
   h2 {
     font-size: 25px;
   }
   .choice {
-    width: 55%;
+    width: 60%;
+    line-height: 30px;
   }
   .result {
     width: 250px;

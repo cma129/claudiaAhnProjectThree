@@ -2,8 +2,8 @@
 @import 'partials/variables';
 
 html {
-    font-family: 'Dosis', sans-serif;
-    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
     text-align: center;
     color: $primaryColor;
     background-color: $backgroundColor;
@@ -55,18 +55,18 @@ h3 {
     font-family: 'Lora', serif;
 }
 
-
 h1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 70px;
 }
 
-.intro {
-    line-height: 45px;
+.intro,
+.results p {
+    line-height: 40px;
     color: $primaryColor;
     font-style: italic;
-    font-size: 25px;
+    font-size: 22px;
     width: 70%;
     margin: 0 auto;
 }
@@ -85,7 +85,7 @@ form {
     background: $secondaryColor;
     border: none;
     border-radius: 15px;
-    margin: 70px 0;
+    margin: 170px 0;
 }
 
 h3 {
@@ -106,7 +106,6 @@ h3 {
 .choice:focus {
     background-color: #ffba9765;
 }
-
 
 .error {
     background: $primaryColor;
@@ -151,9 +150,16 @@ h2 {
 
 .result {
     margin: 3px auto;
-    width: 350px;
+    height: 520px;
     border-radius: 15px;
     border: 20px solid $secondaryColor;
+}
+
+.results p {
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    // width: 30%;
 }
 
 footer {
@@ -166,6 +172,7 @@ footer {
     font-family: 'Bangers', cursive;
     font-size: 23px;
     padding: 10px;
+    margin: 0 0 20px;
 }
 
 footer p {
@@ -177,7 +184,25 @@ footer p {
 
 // Media queries
 
+@media(max-width: 1385px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 28px;
+    }
+
+    .choice {
+        width: 27%;
+    }
+}
+
 @media(max-width: 1350px) {
+    h1 {
+        font-size: 50px;
+    }
+    
     .miniWrapper {
         width: 80%;
     }
@@ -186,15 +211,22 @@ footer p {
         font-size: 25px;
     }
 
+    button {
+        font-size: 26px;
+    }
+
     .choice {
         font-size: 22px;
-        width: 25%;
     }
 }
 
 @media(max-width: 1050px) {
     h1 {
         font-size: 40px;
+    }
+
+    .intro {
+        font-size: 17px;
     }
 
     .miniWrapper {
@@ -206,7 +238,7 @@ footer p {
     }
 
     .choice {
-        width: 35%;
+        width: 28%;
     }
 
     .error {
@@ -214,7 +246,7 @@ footer p {
     }
 
     button {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     h2 {
@@ -223,18 +255,32 @@ footer p {
 }
 
 @media(max-width: 810px) {
+    h1 {
+        font-size: 37px;
+        padding-bottom: 20px;
+    }
+
     .miniWrapper {
-        width: 100%;
+        width: 95%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .start {
+        width: 50%;
     }
 
     h3 {
-    font-size: 21px;
+    font-size: 25px;
     }
 
     .choice {
         font-size: 20px;
-        width: 34%;
+        width: 30%;
     }
+
     .error {
         font-size: 23px;
         width: 55%;
@@ -246,8 +292,16 @@ footer p {
         width: 90%;
     }
 
+    h1 {
+        line-height: 40px;
+    }
+
+    .start {
+        width: 60%;
+    }
+
     .choice {
-        width: 45%;
+        width: 35%;
     }
 
     .error {
@@ -261,12 +315,17 @@ footer p {
         font-size: 20px;
     }
 
+    .start {
+        width: 75%;
+    }
+
     h2 {
         font-size: 26px;
     }
 
     .choice {
-        width: 53%;
+        font-size: 17px;
+        width: 55%;
     }
 
     .error {
@@ -290,12 +349,17 @@ footer p {
         padding: 20px 30px;
     }
 
+    .start {
+        width: 90%;
+    }
+
     h2 {
         font-size: 25px;
     }
 
     .choice {
-        width: 55%;
+        width: 60%;
+        line-height: 30px;
     }
 
     .result {
