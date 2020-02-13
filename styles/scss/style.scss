@@ -44,7 +44,7 @@ header {
 }
 
 .start {
-    width: 35%;
+    width: 40%;
     margin: 70px auto;
 }
 
@@ -85,7 +85,7 @@ form {
     background: $secondaryColor;
     border: none;
     border-radius: 15px;
-    margin: 170px 0;
+    margin: 250px 0;
 }
 
 h3 {
@@ -95,8 +95,8 @@ h3 {
 }
 
 .choice {
-    width: 23%;
-    margin: 30px auto;
+    width: 25%;
+    margin: 3% auto;
     border-radius: 15px;
     line-height: 50px;
     transition: background-color 0.5s linear;
@@ -150,22 +150,23 @@ h2 {
 
 .result {
     margin: 3px auto;
-    height: 520px;
+    width: 38%;
+    height: 38%;
     border-radius: 15px;
     border: 20px solid $secondaryColor;
 }
 
 .results p {
-    padding-top: 15px;
+    padding: 10px 0 20px;
     font-size: 18px;
-    line-height: 27px;
-    // width: 30%;
+    line-height: 26px;
+    width: 80%;
 }
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .toTop {
@@ -183,6 +184,8 @@ footer p {
 }
 
 // Media queries
+
+// Desktop
 
 @media(max-width: 1385px) {
     h1 {
@@ -211,12 +214,25 @@ footer p {
         font-size: 25px;
     }
 
+    .error {
+        width: 30%;
+        position: relative;
+        left: 73%;
+        line-height: 29px;
+        font-size: 24px;
+    }
+
     button {
         font-size: 26px;
     }
 
-    .choice {
-        font-size: 22px;
+    .result {
+        width: 27%;
+        height: 27%;
+    }
+
+    .results p {
+        width: 55%;
     }
 }
 
@@ -227,6 +243,11 @@ footer p {
 
     .intro {
         font-size: 17px;
+        line-height: 28px;
+    }
+
+    .start {
+        width: 55%;
     }
 
     .miniWrapper {
@@ -240,9 +261,10 @@ footer p {
     .choice {
         width: 28%;
     }
-
+    
     .error {
-        width: 50%;
+        line-height: 29px;
+        font-size: 23px;
     }
 
     button {
@@ -252,11 +274,22 @@ footer p {
     h2 {
         font-size: 30px;
     }
+
+    .result {
+        width: 30%;
+        height: 30%;
+    }
+
+    .toTop {
+        font-size: 22px;
+    }
 }
+
+// Tablet
 
 @media(max-width: 810px) {
     h1 {
-        font-size: 37px;
+        font-size: 34px;
         padding-bottom: 20px;
     }
 
@@ -277,15 +310,37 @@ footer p {
     }
 
     .choice {
-        font-size: 20px;
         width: 30%;
     }
-
+    
     .error {
-        font-size: 23px;
-        width: 55%;
+        width: 35%;
+        position: relative;
+        left: 66%;
+        line-height: 28px;
+        font-size: 21px;
+    }
+
+    .result {
+        width: 35%;
+        height: 35%;
+    }
+
+    .results p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .toTop {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 15px;
     }
 }
+
+// Large mobile
 
 @media(max-width: 700px) {
     .wrapper {
@@ -296,27 +351,63 @@ footer p {
         line-height: 40px;
     }
 
+    .intro {
+        font-size: 16.5px;
+    }
+
     .start {
-        width: 60%;
+        width: 70%;
     }
 
     .choice {
-        width: 35%;
+        width: 43%;
+        font-size: 17px;
     }
 
     .error {
-        left: 52%;
-        bottom: 0;
+        width: 50%;
+        position: relative;
+        left: 55%;
+        bottom: 10px;
+        line-height: 27px;
+        font-size: 19px;
+    }
+
+    .result {
+        width: 40%;
+        height: 40%;
+    }
+
+    .results p {
+        padding: 8px 0 40px;
+        font-size: 15px;
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .toTop {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
 
+// Mobile
+
 @media(max-width: 430px) {
+    .intro {
+        line-height: 25px;
+        width: 90%;
+    }
+
     button {
         font-size: 20px;
     }
 
     .start {
-        width: 75%;
+        width: 80%;
     }
 
     h2 {
@@ -324,29 +415,44 @@ footer p {
     }
 
     .choice {
-        font-size: 17px;
+        font-size: 16.5px;
         width: 55%;
     }
 
     .error {
-        font-size: 20px;
+        width: 52%;
+        position: relative;
         left: 54%;
+        bottom: 5px;
         line-height: 25px;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .result {
-        width: 300px;
+        width: 60%;
+        height: 60%;
         border: 17px solid $secondaryColor;
     }
 
+    .results p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 85%;
+    }
+
+    .toTop {
+        font-size: 19px;
+    }
+
     footer p {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
 @media(max-width: 365px) {
     button {
-        padding: 20px 30px;
+        padding: 15px 20px;
     }
 
     .start {
@@ -363,7 +469,12 @@ footer p {
     }
 
     .result {
-        width: 250px;
+        width: 65%;
+        height: 65%;
         border: 15px solid $secondaryColor;
+    }
+
+    footer p {
+        font-size: 11px;
     }
 }
