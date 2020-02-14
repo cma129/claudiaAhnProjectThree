@@ -1,5 +1,3 @@
-//triple check responsive (check on mobile)
-
 //My future goal is to DRY my code using forEach loops for similar/same functions repeated.
 
 
