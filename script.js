@@ -1,9 +1,12 @@
-//Comments in html, css, js (pseudo code)
 //triple check responsive (check on mobile)
-//simplify js syntax
+
+//My future goal is to DRY my code using forEach loops for similar/same functions repeated.
+
 
 $(document).ready(function(){
 
+
+//'Start quiz' button - scroll to #1
     $('.start').on('click', function(e){
 
         $('html, body').animate(
@@ -16,9 +19,10 @@ $(document).ready(function(){
     }); //Retrieved from https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 
 
-    $('input[name=where]').on('click', function(e){
+//Auto-scroll for each question when answered
 
-        console.log('click');
+    //Q1 to Q2
+    $('input[name=where]').on('click', function(e){
         $('html, body').animate(
             {
                 scrollTop: $($('#style')).offset().top,
@@ -28,9 +32,8 @@ $(document).ready(function(){
         )
     });
 
+    //Q2 to Q3
     $('input[name=style]').on('click', function(e){
-
-        console.log('click');
         $('html, body').animate(
             {
                 scrollTop: $($('#weather')).offset().top,
@@ -40,9 +43,8 @@ $(document).ready(function(){
         )
     });
 
+    //Q3 to Q4
     $('input[name=weather]').on('click', function(e){
-
-        console.log('click');
         $('html, body').animate(
             {
                 scrollTop: $($('#colours')).offset().top,
@@ -52,9 +54,8 @@ $(document).ready(function(){
         )
     });
 
+    //Q4 to Q5
     $('input[name=colours]').on('click', function(e){
-
-        console.log('click');
         $('html, body').animate(
             {
                 scrollTop: $($('#gender')).offset().top,
@@ -64,14 +65,19 @@ $(document).ready(function(){
         )
     });
 
+
+// Customized error msg to notify user to answer all q's
+
     $('button[type=submit]').on('click', function(e){
 
+        //check if individual q's have been answered
         const userGender = $('input[name=gender]:checked').val();
         const userWhere = $('input[name=where]:checked').val();
         const userWeather = $('input[name=weather]:checked').val();
         const userStyle = $('input[name=style]:checked').val();
         const userColours = $('input[name=colours]:checked').val();  
         
+        //error msg display
         if(userGender === undefined){
             $('.genderError').fadeIn(1500);
         }
@@ -91,19 +97,28 @@ $(document).ready(function(){
         if(userColours === undefined){
             $('.colourError').fadeIn(1500);
         }
-
     });
+
+
+//Submit button
 
     $('form').on('submit', function(e) {
 
         e.preventDefault();
 
+        // Clear previous image if existing
+        if($('input[type=radio]:checked').val() !== undefined){
+            $('.results').fadeOut();
+        }
+
+        //Grab user's choices
         const userGender = $('input[name=gender]:checked').val();
         const userWhere = $('input[name=where]:checked').val();
         const userWeather = $('input[name=weather]:checked').val();
         const userStyle = $('input[name=style]:checked').val();
         const userColours = $('input[name=colours]:checked').val();  
 
+        //Filter out suggestions based on the choices
         if(userGender === 'male'){
             if(userWhere === 'home'){
                 finalResult = 'pajamaM'
@@ -143,17 +158,22 @@ $(document).ready(function(){
             }
         }
 
+        // Display results and scroll to bottom of page
         $('h2').fadeIn(1500);
         $(`.${finalResult}`).fadeIn(1500);
-
         $('html, body').animate({scrollTop: 9999}, "slow");
+
 
     });
 
+
+//Reset button
+
     $('.toTop').on('click', function(e){
+        
         e.preventDefault()
 
-        // Go to question #1
+        // Scroll to question #1
         $('html, body').animate(
             {
                 scrollTop: $($('#where')).offset().top,
@@ -166,10 +186,9 @@ $(document).ready(function(){
         $('form')[0].reset();
         $('form').find('input:hidden').val('');
         $('input[type="radio"]').prop('checked', false);  //https://stackoverflow.com/questions/50159793/jquery-javascript-reset-clear-radio-button-value-and-un-checke-the-element
-        $('h2').fadeOut(200);
-        $(`.${finalResult}`).fadeOut(200);
-        $('.error').fadeOut(200);
-        
+        $('h2').fadeOut();
+        $(`.${finalResult}`).fadeOut();
+        $('.error').fadeOut();
     });
 
 });

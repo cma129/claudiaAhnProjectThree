@@ -404,11 +404,6 @@ header {
   background-image: linear-gradient(to right, rgba(255, 185, 151, 0.7), rgba(255, 185, 151, 0.8)), url("assets/bg1.jpg");
 }
 
-.start {
-  width: 40%;
-  margin: 70px auto;
-}
-
 h1,
 h2,
 button,
@@ -430,6 +425,11 @@ h1 {
   font-size: 22px;
   width: 70%;
   margin: 0 auto;
+}
+
+.start {
+  width: 40%;
+  margin: 70px auto;
 }
 
 .miniWrapper {

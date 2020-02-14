@@ -25,6 +25,7 @@
         <!-- Main starts here -->
         <main id="maincontent" class="miniWrapper">
             <form action="">
+                <!-- Q1 -->
                 <fieldset id="where" class="where qContainer">
                     <h3>1. Where are you going?</h3>
                     <ul>
@@ -49,6 +50,7 @@
                         <p>Oops! You forgot to tell me where you're heading!</p>
                     </div>
                 </fieldset>
+                <!-- Q2 -->
                 <fieldset id="style" class="style qContainer">
                     <h3>2. What's your personal fashion style generally?</h3>
                     <ul>
@@ -73,6 +75,7 @@
                         <p>Oops! You forgot to tell me your fashion style!</p>
                     </div>
                 </fieldset>
+                <!-- Q3 -->
                 <fieldset id="weather" class="weather qContainer">
                     <h3>3. What's the weather like today?</h3>
                     <ul>
@@ -97,6 +100,7 @@
                         <p>Oops! You forgot to tell me the weather!</p>
                     </div>
                 </fieldset>
+                <!-- Q4 -->
                 <fieldset id="colours" class="colours qContainer">
                     <h3>4. What kinds of colours do you like to wear?</h3>
                     <ul>
@@ -121,6 +125,7 @@
                         <p>Oops! You forgot to tell me your favourite colours!</p>
                     </div>
                 </fieldset>
+                <!-- Q5 -->
                 <fieldset id="gender" class="gender qContainer">
                     <h3>5. What best describes your gender?</h3>
                     <ul>
@@ -139,74 +144,88 @@
                 </fieldset>
                 <button type="submit">What should I wear?</button>
             </form>
-            
-            <!-- <section id="results" class="results"> -->
-                <h2>Today's look for you!</h2>
-                    <div class="casualM results">
-                        <img class="result" src="styles/assets/casualM.jpg" alt="Man wearing casual clothes">
-                        <p>How about a simple graphic hoodie with a vintage denim jacket on top and a pair of black jeans?</p>
-                    </div>
-                    <div class="casualF results">
-                        <img class="result" src="styles/assets/casualF.jpg" alt="Woman wearing casual clothes">
-                        <p>How about a simple sweatshirt and true blue jeans with a cute purse?</p>
-                    </div>
-                    <div class="fashionableM results">
-                        <img class="result" src="styles/assets/fashionableM.jpg" alt="Man wearing fashionable clothes">
-                        <p>Let's go simple with a plain t-shirt, denim jacket and dark jeans, but spice up your overall look with a fedora, scarf and vivid socks!</p>
-                    </div>
-                    <div class="fashionableF results">
-                        <img class="result" src="styles/assets/fashionableF.jpg" alt="Woman wearing fashionable clothes">
-                        <p>How about a unique shirt with some special details and a pair of simple pants? Don't forget to spice up your look with cute bracelets and a choker necklace!</p>
-                    </div>
-                    <div class="pajamaM results">
-                        <img class="result" src="styles/assets/pajamaM.jpg" alt="Man wearing a pajama">
-                        <p>If you're staying home, let yourself stay comfy! Why don't you put on a loose sweater and sweat shorts?</p>
-                    </div>
-                    <div class="pajamaF results">
-                        <img class="result" src="styles/assets/pajamaF.jpg" alt="Woman wearing a pajama">
-                        <p>If you're staying home, let yourself stay comfy! Why don't you put on a t-shirt and loose sweatpants?</p>
-                    </div>
-                    <div class="pastelM results">
-                        <img class="result" src="styles/assets/pastelM.jpg" alt="Man wearing pastel-coloured clothes">
-                        <p>Let's go with pretty pastel items today! Try to find a sweater in a colour that can stand out.</p>
-                    </div>
-                    <div class="pastelF results">
-                        <img class="result" src="styles/assets/pastelF.jpg" alt="Woman wearing pastel-coloured clothes">
-                        <p>Let's go with pretty pastel items today! Make sure your top and bottoms have matching colours.</p>
-                    </div>
-                    <div class="professionalM results">
-                        <img class="result" src="styles/assets/professionalM.jpg" alt="Man wearing a suit">
-                        <p>You could never go wrong with a traditional grey suit and a simple tie. I would choose dark-coloured dress shoes, and yes, you need a nice watch today!</p>
-                    </div>
-                    <div class="professionalF results">
-                        <img class="result" src="styles/assets/professionalF.jpg" alt="Woman wearing professional clothes">
-                        <p>A classic look with an ivory blouse and dark-coloured pants. Make sure you choose a cute purse so you don't look too boring!</p>
-                    </div>
-                    <div class="rainBootsM results">
-                        <img class="result" src="styles/assets/rainBootsM.jpg" alt="Man wearing rain boots">
-                        <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with fun colours?</p>
-                    </div>
-                    <div class="rainBootsF results">
-                        <img class="result" src="styles/assets/rainBootsF.jpg" alt="Woman wearing rain boots">
-                        <p>Let's play it safe with all items in the same dark colour and just one item in a different colour to complete the look.</p>
-                    </div>
-                    <div class="snowyM results">
-                        <img class="result" src="styles/assets/snowyM.png" alt="Man wearing snow boots">
-                        <p>A pair of thick jeans and a jacket with snow boots will keep you warm all day long. Don't forget to put on a matching scarf & hat!</p>
-                    </div>
-                    <div class="snowyF results">
-                        <img class="result" src="styles/assets/snowyF.png" alt="Woman wearing snow boots">
-                        <p>A pair of thick leggings and a bulky sweater with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
-                    </div>
-                    <div class="sunglassesM results">
-                        <img class="result" src="styles/assets/sunglassesM.jpg" alt="Man wearing sunglasses">
-                        <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
-                    </div>
-                    <div class="sunglassesF results">
-                        <img class="result" src="styles/assets/sunglassesF.jpg" alt="Woman wearing sunglasses">
-                        <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
-                    </div>
-            <!-- </section> -->
+            <!-- Results -->
+            <h2>Today's look for you!</h2>
+            <!-- Option 1 -->
+            <div class="casualM results">
+                <img class="result" src="styles/assets/casualM.jpg" alt="Man wearing casual clothes">
+                <p>How about a simple graphic hoodie with a vintage denim jacket on top and a pair of black jeans?</p>
+            </div>
+            <!-- Option 2 -->
+            <div class="casualF results">
+                <img class="result" src="styles/assets/casualF.jpg" alt="Woman wearing casual clothes">
+                <p>How about a simple sweatshirt and true blue jeans with a cute purse?</p>
+            </div>
+            <!-- Option 3 -->
+            <div class="fashionableM results">
+                <img class="result" src="styles/assets/fashionableM.jpg" alt="Man wearing fashionable clothes">
+                <p>Let's go simple with a plain t-shirt, denim jacket and dark jeans, but spice up your overall look with a fedora, scarf and vivid socks!</p>
+            </div>
+            <!-- Option 4 -->
+            <div class="fashionableF results">
+                <img class="result" src="styles/assets/fashionableF.jpg" alt="Woman wearing fashionable clothes">
+                <p>How about a unique shirt with some special details and a pair of simple pants? Don't forget to spice up your look with cute bracelets and a choker necklace!</p>
+            </div>
+            <!-- Option 5 -->
+            <div class="pajamaM results">
+                <img class="result" src="styles/assets/pajamaM.jpg" alt="Man wearing a pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a loose sweater and sweat shorts?</p>
+            </div>
+            <!-- Option 6 -->
+            <div class="pajamaF results">
+                <img class="result" src="styles/assets/pajamaF.jpg" alt="Woman wearing a pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a t-shirt and loose sweatpants?</p>
+            </div>
+            <!-- Option 7 -->
+            <div class="pastelM results">
+                <img class="result" src="styles/assets/pastelM.jpg" alt="Man wearing pastel-coloured clothes">
+                <p>Let's go with pretty pastel items today! Try to find a sweater in a colour that can stand out.</p>
+            </div>
+            <!-- Option 8 -->
+            <div class="pastelF results">
+                <img class="result" src="styles/assets/pastelF.jpg" alt="Woman wearing pastel-coloured clothes">
+                <p>Let's go with pretty pastel items today! Make sure your top and bottoms have matching colours.</p>
+            </div>
+            <!-- Option 9 -->
+            <div class="professionalM results">
+                <img class="result" src="styles/assets/professionalM.jpg" alt="Man wearing a suit">
+                <p>You could never go wrong with a traditional grey suit and a simple tie. I would choose dark-coloured dress shoes, and yes, you need a nice watch today!</p>
+            </div>
+            <!-- Option 10 -->
+            <div class="professionalF results">
+                <img class="result" src="styles/assets/professionalF.jpg" alt="Woman wearing professional clothes">
+                <p>A classic look with an ivory blouse and dark-coloured pants. Make sure you choose a cute purse so you don't look too boring!</p>
+            </div>
+            <!-- Option 11 -->
+            <div class="rainBootsM results">
+                <img class="result" src="styles/assets/rainBootsM.jpg" alt="Man wearing rain boots">
+                <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with fun colours?</p>
+            </div>
+            <!-- Option 12 -->
+            <div class="rainBootsF results">
+                <img class="result" src="styles/assets/rainBootsF.jpg" alt="Woman wearing rain boots">
+                <p>Let's play it safe with all items in the same dark colour and just one item in a different colour to complete the look.</p>
+            </div>
+            <!-- Option 13 -->
+            <div class="snowyM results">
+                <img class="result" src="styles/assets/snowyM.png" alt="Man wearing snow boots">
+                <p>A pair of thick jeans and a jacket with snow boots will keep you warm all day long. Don't forget to put on a matching scarf & hat!</p>
+            </div>
+            <!-- Option 14 -->
+            <div class="snowyF results">
+                <img class="result" src="styles/assets/snowyF.png" alt="Woman wearing snow boots">
+                <p>A pair of thick leggings and a bulky sweater with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
+            </div>
+            <!-- Option 15 -->
+            <div class="sunglassesM results">
+                <img class="result" src="styles/assets/sunglassesM.jpg" alt="Man wearing sunglasses">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
+            </div>
+            <!-- Option 16 -->
+            <div class="sunglassesF results">
+                <img class="result" src="styles/assets/sunglassesF.jpg" alt="Woman wearing sunglasses">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
+            </div>
         </main>
         <!-- Main ends here -->
         <!-- Footer starts here -->
@@ -220,6 +239,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="app.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="./script2.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
