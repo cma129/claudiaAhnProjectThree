@@ -1,0 +1,328 @@
+// Desktop
+@media(max-width: 1385px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 28px;
+    }
+
+    .choice {
+        width: 24%;
+        margin: 4% auto;
+    }
+}
+
+@media(max-width: 1350px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    .miniWrapper {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .choice {
+        width: 21%;
+    }
+
+    .error {
+        width: 30%;
+        position: relative;
+        left: 73%;
+        line-height: 29px;
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 26px;
+    }
+
+    .result {
+        width: 27%;
+        height: 27%;
+    }
+
+    .results p {
+        width: 55%;
+    }
+}
+
+@media(max-width: 1050px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .intro {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .start {
+        width: 55%;
+    }
+
+    .miniWrapper {
+        width: 90%;
+    }
+
+    h3 {
+        line-height: 30px;
+    }
+
+    .choice {
+        width: 24%;
+        margin: 5% auto;
+    }
+    
+    .error {
+        line-height: 29px;
+        font-size: 23px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .result {
+        width: 30%;
+        height: 30%;
+    }
+
+    .toTop {
+        font-size: 22px;
+    }
+}
+
+// Tablet
+@media(max-width: 810px) {
+    .icons {
+        font-size: 23px;
+    }
+
+    .icons li {
+        margin-right: 15px;
+    }
+
+    .icons i:hover,
+    .icons i:focus {
+        font-size: 27px;
+    }
+
+    h1 {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+
+    .miniWrapper {
+        width: 95%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .start {
+        width: 50%;
+    }
+
+    h3 {
+    font-size: 25px;
+    }
+
+    .choice {
+        width: 26%;
+        margin: 6% auto;
+    }
+    
+    .error {
+        width: 35%;
+        position: relative;
+        left: 66%;
+        line-height: 28px;
+        font-size: 21px;
+    }
+
+    .result {
+        width: 35%;
+        height: 35%;
+    }
+
+    .results p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .toTop {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
+
+// Large mobile
+@media(max-width: 700px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    h1 {
+        line-height: 40px;
+    }
+
+    .intro {
+        font-size: 16.5px;
+    }
+
+    .start {
+        width: 70%;
+    }
+
+    .choice {
+        width: 40%;
+        font-size: 17px;
+        margin: 7% auto;
+    }
+
+    .error {
+        width: 50%;
+        position: relative;
+        left: 55%;
+        bottom: 10px;
+        line-height: 27px;
+        font-size: 19px;
+    }
+
+    .result {
+        width: 40%;
+        height: 40%;
+    }
+
+    .results p {
+        padding: 8px 0 40px;
+        font-size: 15px;
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .toTop {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+// Mobile
+@media(max-width: 430px) {
+    .icons {
+        font-size: 21px;
+    }
+
+    .icons li {
+        margin-right: 7px;
+    }
+
+    .icons i:hover,
+    .icons i:focus {
+        font-size: 25px;
+    }
+
+    .intro {
+        line-height: 25px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .start {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .choice {
+        font-size: 16.5px;
+        width: 48%;
+        margin: 8% auto;
+    }
+
+    .error {
+        width: 52%;
+        position: relative;
+        left: 54%;
+        bottom: 5px;
+        line-height: 25px;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .result {
+        width: 60%;
+        height: 60%;
+        border: 17px solid $secondaryColor;
+    }
+
+    .results p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 85%;
+    }
+
+    .toTop {
+        font-size: 19px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 365px) {
+    .icons li {
+        margin-right: 2px;
+    }
+
+    button {
+        padding: 15px 20px;
+    }
+
+    .start {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .choice {
+        width: 56%;
+        line-height: 40px;
+    }
+
+    .result {
+        width: 65%;
+        height: 65%;
+        border: 15px solid $secondaryColor;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}

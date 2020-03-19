@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Today's Look Quiz</title>
+    <title>What should I wear today?</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Bangers|Lora:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ae09e0157.js" crossorigin="anonymous"></script>
     <link type="image/png" href="styles/assets/favicon.png" rel="icon">
 </head>
 <body>
+    <a href="#maincontent" class="skipLink">Skip to main content</a>
     <div id="particlesJs"></div>
         <!-- Header starts here -->
         <header>
-            <div class="wrapper">
-                <a href="#maincontent" class="skipLink">Skip to main content</a>
+            <div class="top-line">
+                <div class="icon-container wrapper">
+                    <img class="logo" src="styles/assets/logo.png" alt="CMH">
+                    <ul class="icons">
+                        <li><a href="http://claudiaahn.com" target="_blank" aria-label="Go to Claudia's website"><i aria-hidden class="fas fa-briefcase"></i></a></li>
+                        <li><a href="mailto:claudiamhahn@gmail.com" target="_blank" aria-label="Email Claudia"><i aria-hidden class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/claudiamhahn" target="_blank" aria-label="Go to Claudia's LinkedIn page"><i aria-hidden class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/cma129" target="_blank" aria-label="Go to Claudia's Github page"><i aria-hidden class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.twitter.com/ahn_claudia" target="_blank" aria-label="Go to Claudia's Twitter page"><i aria-hidden class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.medium.com/@claudiamhahn" target="_blank" aria-label="Go to Claudia's blog"><i aria-hidden class="fab fa-medium-m"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro-container wrapper" id="maincontent">
                 <h1>What should I wear today?</h1>
                 <p class="intro">I know it's a hassle to figure out what to wear every morning. I don't know what your wardrobe looks like exactly, but once you take this short quiz, you should be able to get some idea as to how to dress today. Good luck finding a perfect look!</p>
                 <button class="start">Start the quiz!</button>
@@ -23,26 +36,26 @@
         </header>
         <!-- Header ends here -->
         <!-- Main starts here -->
-        <main id="maincontent" class="miniWrapper">
+        <main class="miniWrapper">
             <form action="">
                 <!-- Q1 -->
                 <fieldset id="where" class="where qContainer">
                     <h3>1. Where are you going?</h3>
                     <ul>
-                        <li class="choice">
-                            <input class="option" type="radio" name="where" value="work" id="work" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="where" value="work" id="work" aria-checked="false">
                             <label for="work"><i class="fas fa-building"></i> Work</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="where" value="school" id="school" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="where" value="school" id="school" aria-checked="false" required="required">
                             <label for="school"><i class="fas fa-school"></i> School</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="where" value="home" id="home" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="where" value="home" id="home" aria-checked="false">
                             <label for="home"><i class="fas fa-home"></i> Staying Home</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="where" value="goingOut" id="goingOut" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="where" value="goingOut" id="goingOut" aria-checked="false">
                             <label for="goingOut"><i class="fas fa-glass-cheers"></i> Going Out</label>
                         </li>
                     </ul>
@@ -54,20 +67,20 @@
                 <fieldset id="style" class="style qContainer">
                     <h3>2. What's your personal fashion style generally?</h3>
                     <ul>
-                        <li class="choice">
-                            <input class="option" type="radio" name="style" value="trendy" id="trendy" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="style" value="trendy" id="trendy" aria-checked="false">
                             <label for="trendy">Trendy</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="style" value="professional" id="professional" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="style" value="professional" id="professional" aria-checked="false">
                             <label for="professional">Professional</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="style" value="classic" id="classic" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="style" value="classic" id="classic" aria-checked="false">
                             <label for="classic">Classic</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="style" value="comfy" id="comfy" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="style" value="comfy" id="comfy" aria-checked="false">
                             <label for="comfy">Comfy</label>
                         </li>
                     </ul>
@@ -79,20 +92,20 @@
                 <fieldset id="weather" class="weather qContainer">
                     <h3>3. What's the weather like today?</h3>
                     <ul>
-                        <li class="choice">
-                            <input class="option" type="radio" name="weather" value="sunny" id="sunny" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="weather" value="sunny" id="sunny" aria-checked="false">
                             <label for="sunny"><i class="fas fa-sun"></i> Sunny</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="weather" value="cloudy" id="cloudy" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="weather" value="cloudy" id="cloudy" aria-checked="false">
                             <label for="cloudy"><i class="fas fa-cloud"></i> Cloudy</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="weather" value="snowy" id="snowy" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="weather" value="snowy" id="snowy" aria-checked="false">
                             <label for="snowy"><i class="far fa-snowflake"></i> Snowy</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="weather" value="rainy" id="rainy" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="weather" value="rainy" id="rainy" aria-checked="false">
                             <label for="rainy"><i class="fas fa-umbrella"></i> Rainy</label>
                         </li>
                     </ul>
@@ -104,20 +117,20 @@
                 <fieldset id="colours" class="colours qContainer">
                     <h3>4. What kinds of colours do you like to wear?</h3>
                     <ul>
-                        <li class="choice">
-                            <input class="option" type="radio" name="colours" value="vivid" id="vivid" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="colours" value="vivid" id="vivid" aria-checked="false">
                             <label for="vivid">Vivid</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="colours" value="pastel" id="pastel" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="colours" value="pastel" id="pastel" aria-checked="false">
                             <label for="pastel">Pastel</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="colours" value="blackGrey" id="blackGrey" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="colours" value="blackGrey" id="blackGrey" aria-checked="false">
                             <label for="blackGrey">Black/Grey</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="colours" value="whiteBeige" id="whiteBeige" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="colours" value="whiteBeige" id="whiteBeige" aria-checked="false">
                             <label for="whiteBeige">White/Beige</label>
                         </li>
                     </ul>
@@ -129,12 +142,12 @@
                 <fieldset id="gender" class="gender qContainer">
                     <h3>5. What best describes your gender?</h3>
                     <ul>
-                        <li class="choice">
-                            <input class="option" type="radio" name="gender" value="male" id="male" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="gender" value="male" id="male" aria-checked="false">
                             <label for="male"><i class="fas fa-male"></i> Male</label>
                         </li>
-                        <li class="choice">
-                            <input class="option" type="radio" name="gender" value="female" id="female" required="required">
+                        <li class="choice" tabindex="-1">
+                            <input class="option" type="radio" name="gender" value="female" id="female" aria-checked="false">
                             <label for="female"><i class="fas fa-female"></i> Female</label>
                         </li>
                     </ul>
@@ -142,96 +155,259 @@
                         <p>Oops! You forgot to tell me your gender!</p>
                     </div>
                 </fieldset>
-                <button type="submit">What should I wear?</button>
+                <button id="submit" type="submit">What should I wear?</button>
             </form>
             <!-- Results -->
             <h2>Today's look for you!</h2>
-            <!-- Option 1 -->
+            <!-- Male Looks -->
+            <!-- Look 1 -->
             <div class="casualM results">
                 <img class="result" src="styles/assets/casualM.jpg" alt="Man wearing casual clothes">
                 <p>How about a simple graphic hoodie with a vintage denim jacket on top and a pair of black jeans?</p>
             </div>
-            <!-- Option 2 -->
-            <div class="casualF results">
-                <img class="result" src="styles/assets/casualF.jpg" alt="Woman wearing casual clothes">
-                <p>How about a simple sweatshirt and true blue jeans with a cute purse?</p>
+            <!-- Look 2 -->
+            <div class="casualPastelM results">
+                <img class="result" src="styles/assets/casualPastelM.jpg" alt="Man wearing pastel-coloured casual clothes">
+                <p>Let's go with cute pastel items today! Try to find a sweater in a colour that can stand out.</p>
             </div>
-            <!-- Option 3 -->
-            <div class="fashionableM results">
-                <img class="result" src="styles/assets/fashionableM.jpg" alt="Man wearing fashionable clothes">
-                <p>Let's go simple with a plain t-shirt, denim jacket and dark jeans, but spice up your overall look with a fedora, scarf and vivid socks!</p>
+            <!-- Look 3 -->
+            <div class="trendyBlackGreyM results">
+                <img class="result" src="styles/assets/trendyBlackGreyM.jpg" alt="Man wearing dark-coloured trendy clothes">
+                <p>Let's go simple with a plain t-shirt, denim jacket and dark-coloured jeans, but spice up your overall look with a fedora, scarf and vivid socks!</p>
             </div>
-            <!-- Option 4 -->
-            <div class="fashionableF results">
-                <img class="result" src="styles/assets/fashionableF.jpg" alt="Woman wearing fashionable clothes">
-                <p>How about a unique shirt with some special details and a pair of simple pants? Don't forget to spice up your look with cute bracelets and a choker necklace!</p>
+            <!-- Look 4 -->
+            <div class="trendyPastelM results">
+                <img class="result" src="styles/assets/trendyPastelM.jpg" alt="Man wearing pastel-coloured trendy clothes">
+                <p>Make a nice colour-block look with a top and bottoms in contrasting colours. Your accessories should match with either your top or bottoms.</p>
             </div>
-            <!-- Option 5 -->
-            <div class="pajamaM results">
-                <img class="result" src="styles/assets/pajamaM.jpg" alt="Man wearing a pajama">
+            <!-- Look 5 -->
+            <div class="trendyVividM results">
+                <img class="result" src="styles/assets/trendyVividM.jpg" alt="Man wearing vivid trendy clothes">
+                <p>Let's go simple with a sweater and dark-coloured jeans, but spice up your overall look with colorful accessories!</p>
+            </div>
+            <!-- Look 6 -->
+            <div class="trendyWhiteBeigeM results">
+                <img class="result" src="styles/assets/trendyWhiteBeigeM.jpg" alt="Man wearing light-coloured trendy clothes">
+                <p>Choose an ivory turtleneck, but go a bit darker on your pants. For all other items you put on today, stick with light, neutral colours!</p>
+            </div>
+            <!-- Look 7 -->
+            <div class="pajamaBlackGreyM results">
+                <img class="result" src="styles/assets/pajamaBlackGreyM.jpg" alt="Man wearing a grey pajama">
                 <p>If you're staying home, let yourself stay comfy! Why don't you put on a loose sweater and sweat shorts?</p>
             </div>
-            <!-- Option 6 -->
-            <div class="pajamaF results">
-                <img class="result" src="styles/assets/pajamaF.jpg" alt="Woman wearing a pajama">
-                <p>If you're staying home, let yourself stay comfy! Why don't you put on a t-shirt and loose sweatpants?</p>
+            <!-- Look 8 -->
+            <div class="pajamaVividM results">
+                <img class="result" src="styles/assets/pajamaVividM.jpg" alt="Man wearing a vivid pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a t-shirt, zip-up hoodie, and a matching pair of sweat pants?</p>
             </div>
-            <!-- Option 7 -->
-            <div class="pastelM results">
-                <img class="result" src="styles/assets/pastelM.jpg" alt="Man wearing pastel-coloured clothes">
-                <p>Let's go with pretty pastel items today! Try to find a sweater in a colour that can stand out.</p>
+            <!-- Look 9 -->
+            <div class="pajamaPastelM results">
+                <img class="result" src="styles/assets/pajamaPastelM.jpg" alt="Man wearing a pastel pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a loose sweater and sweat pants?</p>
             </div>
-            <!-- Option 8 -->
-            <div class="pastelF results">
-                <img class="result" src="styles/assets/pastelF.jpg" alt="Woman wearing pastel-coloured clothes">
-                <p>Let's go with pretty pastel items today! Make sure your top and bottoms have matching colours.</p>
-            </div>
-            <!-- Option 9 -->
-            <div class="professionalM results">
-                <img class="result" src="styles/assets/professionalM.jpg" alt="Man wearing a suit">
+            <!-- Look 10 -->
+            <div class="professionalBlackGreyM results">
+                <img class="result" src="styles/assets/professionalBlackGreyM.jpg" alt="Man wearing a grey suit">
                 <p>You could never go wrong with a traditional grey suit and a simple tie. I would choose dark-coloured dress shoes, and yes, you need a nice watch today!</p>
             </div>
-            <!-- Option 10 -->
-            <div class="professionalF results">
-                <img class="result" src="styles/assets/professionalF.jpg" alt="Woman wearing professional clothes">
-                <p>A classic look with an ivory blouse and dark-coloured pants. Make sure you choose a cute purse so you don't look too boring!</p>
+            <!-- Look 11 -->
+            <div class="professionalWhiteBeigeM results">
+                <img class="result" src="styles/assets/professionalWhiteBeigeM.jpg" alt="Man wearing a beige suit">
+                <p>You could never go wrong with a traditional beige suit and a striped tie. I would choose darker-coloured dress shoes, and yes, you need a nice watch today!</p>
             </div>
-            <!-- Option 11 -->
-            <div class="rainBootsM results">
-                <img class="result" src="styles/assets/rainBootsM.jpg" alt="Man wearing rain boots">
+            <!-- Look 12 -->
+            <div class="professionalPastelM results">
+                <img class="result" src="styles/assets/professionalPastelM.jpg" alt="Man wearing a pastel suit">
+                <p>You could never go wrong with a trendy pastel suit and a simple tie. You don't need to wear a set, have fun mix-and-matching!</p>
+            </div>
+            <!-- Look 13 -->
+            <div class="professionalVividM results">
+                <img class="result" src="styles/assets/professionalVividM.jpg" alt="Man wearing a vivid suit">
+                <p>Let's try a fun vivid suit today. I would choose dark-coloured shoes to tone down a bit, and your tie and shoes should match.</p>
+            </div>
+            <!-- Look 14 -->
+            <div class="rainBootsVividM results">
+                <img class="result" src="styles/assets/rainBootsVividM.jpg" alt="Man wearing vivid clothes and rain boots">
                 <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with fun colours?</p>
             </div>
-            <!-- Option 12 -->
-            <div class="rainBootsF results">
-                <img class="result" src="styles/assets/rainBootsF.jpg" alt="Woman wearing rain boots">
-                <p>Let's play it safe with all items in the same dark colour and just one item in a different colour to complete the look.</p>
+            <!-- Look 15 -->
+            <div class="rainBootsBlackGreyM results">
+                <img class="result" src="styles/assets/rainBootsBlackGreyM.jpg" alt="Man wearing dark-coloured clothes and rain boots">
+                <p>Your rainy day outfit can look fashionable with nice dark-coloured items!</p>
             </div>
-            <!-- Option 13 -->
+            <!-- Look 16 -->
             <div class="snowyM results">
                 <img class="result" src="styles/assets/snowyM.png" alt="Man wearing snow boots">
                 <p>A pair of thick jeans and a jacket with snow boots will keep you warm all day long. Don't forget to put on a matching scarf & hat!</p>
             </div>
-            <!-- Option 14 -->
-            <div class="snowyF results">
-                <img class="result" src="styles/assets/snowyF.png" alt="Woman wearing snow boots">
-                <p>A pair of thick leggings and a bulky sweater with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
-            </div>
-            <!-- Option 15 -->
+            <!-- Look 17 -->
             <div class="sunglassesM results">
                 <img class="result" src="styles/assets/sunglassesM.jpg" alt="Man wearing sunglasses">
                 <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
             </div>
-            <!-- Option 16 -->
-            <div class="sunglassesF results">
-                <img class="result" src="styles/assets/sunglassesF.jpg" alt="Woman wearing sunglasses">
+            <!-- Look 18 -->
+            <div class="sunglassesVividM results">
+                <img class="result" src="styles/assets/sunglassesVividM.jpg" alt="Man wearing sunglasses and vivid clothes">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and make your overall look colorful and fun!</p>
+            </div>
+            <!-- Look 19 -->
+            <div class="basicM results">
+                <img class="result" src="styles/assets/basicM.jpg" alt="Man wearing basic fashion items">
+                <p>Sometimes, sticking to the basics is the best! How about a plain white shirt with jeans?</p>
+            </div>
+
+            <!-- Female Looks -->
+            <!-- Look 1 -->
+            <div class="casualBlackGreyF results">
+                <img class="result" src="styles/assets/casualBlackGreyF.jpg" alt="Woman wearing grey and denim casual clothes">
+                <p>How about a simple sweatshirt and true blue jeans with a cute purse?</p>
+            </div>
+            <!-- Look 2 -->
+            <div class="casualVividF results">
+                <img class="result" src="styles/assets/casualVividF.jpg" alt="Woman wearing vivid casual clothes">
+                <p>How about a vivid sweater and washed-out jeans with a cute purse?</p>
+            </div>
+            <!-- Look 3 -->
+            <div class="casualWhiteBeigeF results">
+                <img class="result" src="styles/assets/casualWhiteBeigeF.jpg" alt="Woman wearing light-coloured casual clothes">
+                <p>How about a striped t-shirt and white jeans? Make sure your accessories match your t-shirt!</p>
+            </div>
+            <!-- Look 4 -->
+            <div class="casualPastelF results">
+                <img class="result" src="styles/assets/casualPastelF.jpg" alt="Woman wearing pastel casual clothes">
+                <p>Let's go with pretty pastel items today! Make sure your top and bottoms have matching colours.</p>
+            </div>
+            <!-- Look 5 -->
+            <div class="pajamaWhiteBeigeF results">
+                <img class="result" src="styles/assets/pajamaWhiteBeigeF.jpg" alt="Woman wearing a light-coloured pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a t-shirt and loose sweatpants?</p>
+            </div>
+            <!-- Look 6 -->
+            <div class="pajamaBlackGreyF results">
+                <img class="result" src="styles/assets/pajamaBlackGreyF.jpg" alt="Woman wearing a dark-coloured pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a silky black pajama set?</p>
+            </div>
+            <!-- Look 7 -->
+            <div class="pajamaPastelF results">
+                <img class="result" src="styles/assets/pajamaPastelF.png" alt="Woman wearing a light pink pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a pastel pajama set?</p>
+            </div>
+            <!-- Look 8 -->
+            <div class="pajamaVividF results">
+                <img class="result" src="styles/assets/pajamaVividF.jpeg" alt="Woman wearing a striped bright pink pajama">
+                <p>If you're staying home, let yourself stay comfy! Why don't you put on a bright-coloured pajama set?</p>
+            </div>
+            <!-- Look 9 -->
+            <div class="professionalWhiteBeigeF results">
+                <img class="result" src="styles/assets/professionalWhiteBeigeF.jpg" alt="Woman wearing light-coloured professional clothes">
+                <p>A classic look with a blouse and a high-waist skirt. Make sure you choose a cute pair of shoes so you don't look boring!</p>
+            </div>
+            <!-- Look 10 -->
+            <div class="professionalPastelF results">
+                <img class="result" src="styles/assets/professionalPastelF.jpg" alt="Woman wearing pastel professional clothes">
+                <p>A lovely pastel look with a blouse, a blazer, and loose pants.</p>
+            </div>
+            <!-- Look 11 -->
+            <div class="professionalBlackGreyF results">
+                <img class="result" src="styles/assets/professionalBlackGreyF.jpg" alt="Woman wearing dark-coloured professional clothes">
+                <p>A classic look with a tight sweater and a dark-coloured suit. Make sure your sweater and shoes match!</p>
+            </div>
+            <!-- Look 12 -->
+            <div class="professionalVividF results">
+                <img class="result" src="styles/assets/professionalVividF.jpg" alt="Woman wearing vivid red professional clothes">
+                <p>You can look professional and fun at the same time! A vivid suit with dark-coloured shoes. Your top and bottoms should be one set so your overall look doesn't look too crazy. Also, make sure your shoes and purse go well together!</p>
+            </div>
+            <!-- Look 13 -->
+            <div class="rainBootsBlackGreyF results">
+                <img class="result" src="styles/assets/rainBootsBlackGreyF.jpg" alt="Woman wearing dark-coloured clothes and rain boots">
+                <p>Let's play it safe with all of your items in the same dark colour and just one item in a different colour to complete the look.</p>
+            </div>
+            <!-- Look 14 -->
+            <div class="rainBootsWhiteBeigeF results">
+                <img class="result" src="styles/assets/rainBootsWhiteBeigeF.jpg" alt="Woman wearing light-coloured clothes and rain boots">
+                <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with light colours?</p>
+            </div>
+            <!-- Look 15 -->
+            <div class="rainBootsPastelF results">
+                <img class="result" src="styles/assets/rainBootsPastelF.jpg" alt="Woman wearing pastel clothes and rain boots">
+                <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with fun pastel colours?</p>
+            </div>
+            <!-- Look 16 -->
+            <div class="rainBootsVividF results">
+                <img class="result" src="styles/assets/rainBootsVividF.jpg" alt="Woman wearing vivid clothes and rain boots">
+                <p>Okay, it can be gloomy with some rain today, so why don't you brighten up your day with fun vivid colours?</p>
+            </div>
+            <!-- Look 17 -->
+            <div class="snowyWhiteBeigeF results">
+                <img class="result" src="styles/assets/snowyWhiteBeigeF.png" alt="Woman wearing light-coloured clothes and snow boots">
+                <p>A pair of thick leggings and a bulky sweater with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
+            </div>
+            <!-- Look 18 -->
+            <div class="snowyBlackGreyF results">
+                <img class="result" src="styles/assets/snowyBlackGreyF.jpg" alt="Woman wearing dark-coloured clothes and snow boots">
+                <p>A sweater and a long down jacket with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
+            </div>
+            <!-- Look 19 -->
+            <div class="snowyPastelF results">
+                <img class="result" src="styles/assets/snowyPastelF.jpg" alt="Woman wearing pastel clothes and snow boots">
+                <p>A pair of thick jeans and a coat with matching snow boots will keep you warm all day long. Don't forget to put on a cute hat!</p>
+            </div>
+            <!-- Look 20 -->
+            <div class="snowyVividF results">
+                <img class="result" src="styles/assets/snowyVividF.jpg" alt="Woman wearing vivid clothes and snow boots">
+                <p>A pair of thick jeans and a coat with snow boots will keep you warm all day long. Don't forget to put on a cute hat and a matching scarf!</p>
+            </div>
+            <!-- Look 21-->
+            <div class="sunglassesWhiteBeigeF results">
+                <img class="result" src="styles/assets/sunglassesWhiteBeigeF.jpg" alt="Woman wearing light-coloured clothes and sunglasses">
                 <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
+            </div>
+            <!-- Look 22-->
+            <div class="sunglassesBlackGreyF results">
+                <img class="result" src="styles/assets/sunglassesBlackGreyF.jpg" alt="Woman wearing darkt-coloured clothes and sunglasses">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
+            </div>
+            <!-- Look 23-->
+            <div class="sunglassesPastelF results">
+                <img class="result" src="styles/assets/sunglassesPastelF.jpg" alt="Woman wearing pastel clothes and sunglasses">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and keep your overall look simple!</p>
+            </div>
+            <!-- Look 24-->
+            <div class="sunglassesVividF results">
+                <img class="result" src="styles/assets/sunglassesVividF.jpg" alt="Woman wearing vivid clothes and sunglasses">
+                <p>Since it's a sunny day, protect your eyes with a nice pair of sunglasses and have fun with bright-coloured items!</p>
+            </div>
+            <!-- Look 25 -->
+            <div class="trendyBlackGreyF results">
+                <img class="result" src="styles/assets/trendyBlackGreyF.jpg" alt="Woman wearing dark-coloured fashionable clothes">
+                <p>How about a unique shirt with some special details and a pair of simple pants? Don't forget to spice up your look with cute bracelets and a choker necklace!</p>
+            </div>
+            <!-- Look 26 -->
+            <div class="trendyWhiteBeigeF results">
+                <img class="result" src="styles/assets/trendyWhiteBeigeF.jpg" alt="Woman wearing light-coloured fashionable clothes">
+                <p>How about a simple shirt and a pair of fashionable pants? Don't forget to spice up your look with cute necklaces and a unique purse!</p>
+            </div>
+            <!-- Look 27 -->
+            <div class="trendyPastelF results">
+                <img class="result" src="styles/assets/trendyPastelF.jpg" alt="Woman wearing pastel fashionable clothes">
+                <p>How about a lovely look with pastel-coloured dress and a pair of matching shoes? Don't forget to spice up your look with a metallic purse!</p>
+            </div>
+            <!-- Look 28 -->
+            <div class="trendyVividF results">
+                <img class="result" src="styles/assets/trendyVividF.jpg" alt="Woman wearing vivid denim fashionable clothes">
+                <p>How about a vivid denim look today? Don't forget to spice up your look with a stylish purse!</p>
+            </div>
+            <!-- Look 29 -->
+            <div class="basicF results">
+                <img class="result" src="styles/assets/basicF.jpg" alt="Woman wearing basic fashion items">
+                <p>Sometimes, sticking to the basics is the best! How about a plain white shirt with dark-coloured jeans?</p>
             </div>
         </main>
         <!-- Main ends here -->
         <!-- Footer starts here -->
         <footer class="wrapper">
             <button class="toTop">Let me start over!</button>
-            <p>© 2020 Claudia Ahn</p>
+            <p>© 2020 Claudia Mh Ahn</p>
         </footer>
         <!-- Footer ends here -->
 

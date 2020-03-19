@@ -357,8 +357,8 @@ html {
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
   text-align: center;
-  color: #0055b6;
-  background-color: #ffb997;
+  color: #222222;
+  background-color: #f1f1f1;
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: 80% 50%;
@@ -399,9 +399,70 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 90px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 185, 151, 0.7)), to(rgba(255, 185, 151, 0.8))), url("assets/bg1.jpg");
-  background-image: linear-gradient(to right, rgba(255, 185, 151, 0.7), rgba(255, 185, 151, 0.8)), url("assets/bg1.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(211, 211, 211, 0.7)), to(rgba(175, 175, 175, 0.8))), url("assets/bg1.jpg");
+  background-image: linear-gradient(to right, rgba(211, 211, 211, 0.7), rgba(175, 175, 175, 0.8)), url("assets/bg1.jpg");
+}
+
+.top-line {
+  border-bottom: 5px solid #8888883a;
+  padding: 0 0 10px;
+  position: relative;
+  bottom: 3%;
+}
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+}
+
+.icons {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #888888;
+}
+
+.icons li {
+  margin-right: 30px;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons li:last-of-type {
+  margin-right: 0;
+}
+
+i {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.icons i:hover,
+.icons i:focus {
+  color: #f1f1f1;
+  font-size: 35px;
+}
+
+.intro-container {
+  margin-top: 3%;
 }
 
 h1,
@@ -420,7 +481,7 @@ h1 {
 .intro,
 .results p {
   line-height: 40px;
-  color: #0055b6;
+  color: #222222;
   font-style: italic;
   font-size: 22px;
   width: 70%;
@@ -443,10 +504,21 @@ form {
 }
 
 .qContainer {
-  background: #f0f0f0;
+  background: #e2e2e2;
   border: none;
   border-radius: 15px;
-  margin: 250px 0;
+  height: 100vh;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h3 {
@@ -455,8 +527,14 @@ h3 {
   margin: 0 auto;
 }
 
+input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
 .choice {
-  width: 25%;
+  width: 23%;
   margin: 3% auto;
   border-radius: 15px;
   line-height: 50px;
@@ -465,13 +543,17 @@ h3 {
 }
 
 .choice:hover,
-.choice:focus {
-  background-color: #ffba9765;
+.choice:focus-within {
+  background-color: #cacaca65;
+}
+
+.greyBackground {
+  background-color: #cacaca65;
 }
 
 .error {
-  background: #0055b6;
-  color: #ffb997;
+  background: #222222;
+  color: #f1f1f1;
   width: 45%;
   border-radius: 15px;
   font-family: 'Bangers', cursive;
@@ -486,10 +568,10 @@ h3 {
 
 button {
   text-transform: uppercase;
-  background-color: #f0f0f0;
+  background-color: #e2e2e2;
   border-radius: 15px;
   padding: 30px 50px;
-  margin: 30px 0;
+  margin: 30px 0 230px;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   font-size: 35px;
@@ -497,8 +579,8 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #0055b6;
-  color: #f0f0f0;
+  background-color: #222222;
+  color: #e2e2e2;
 }
 
 h2,
@@ -513,10 +595,10 @@ h2 {
 
 .result {
   margin: 3px auto;
-  width: 38%;
-  height: 38%;
+  width: 30%;
+  height: 30%;
   border-radius: 15px;
-  border: 20px solid #f0f0f0;
+  border: 18px solid #e2e2e2;
 }
 
 .results p {
@@ -549,7 +631,7 @@ footer p {
   text-align: right;
   font-size: 15px;
   margin-bottom: 5px;
-  color: #0055b660;
+  color: #aaaaaa;
 }
 
 @media (max-width: 1385px) {
@@ -560,7 +642,7 @@ footer p {
     font-size: 28px;
   }
   .choice {
-    width: 27%;
+    width: 24%;
     margin: 4% auto;
   }
 }
@@ -574,6 +656,9 @@ footer p {
   }
   h3 {
     font-size: 25px;
+  }
+  .choice {
+    width: 21%;
   }
   .error {
     width: 30%;
@@ -612,7 +697,7 @@ footer p {
     line-height: 30px;
   }
   .choice {
-    width: 28%;
+    width: 24%;
     margin: 5% auto;
   }
   .error {
@@ -635,6 +720,16 @@ footer p {
 }
 
 @media (max-width: 810px) {
+  .icons {
+    font-size: 23px;
+  }
+  .icons li {
+    margin-right: 15px;
+  }
+  .icons i:hover,
+  .icons i:focus {
+    font-size: 27px;
+  }
   h1 {
     font-size: 34px;
     padding-bottom: 20px;
@@ -652,7 +747,7 @@ footer p {
     font-size: 25px;
   }
   .choice {
-    width: 30%;
+    width: 26%;
     margin: 6% auto;
   }
   .error {
@@ -692,7 +787,7 @@ footer p {
     width: 70%;
   }
   .choice {
-    width: 43%;
+    width: 40%;
     font-size: 17px;
     margin: 7% auto;
   }
@@ -723,6 +818,16 @@ footer p {
 }
 
 @media (max-width: 430px) {
+  .icons {
+    font-size: 21px;
+  }
+  .icons li {
+    margin-right: 7px;
+  }
+  .icons i:hover,
+  .icons i:focus {
+    font-size: 25px;
+  }
   .intro {
     line-height: 25px;
     width: 90%;
@@ -738,7 +843,7 @@ footer p {
   }
   .choice {
     font-size: 16.5px;
-    width: 55%;
+    width: 48%;
     margin: 8% auto;
   }
   .error {
@@ -753,7 +858,7 @@ footer p {
   .result {
     width: 60%;
     height: 60%;
-    border: 17px solid #f0f0f0;
+    border: 17px solid #e2e2e2;
   }
   .results p {
     font-size: 14px;
@@ -769,6 +874,9 @@ footer p {
 }
 
 @media (max-width: 365px) {
+  .icons li {
+    margin-right: 2px;
+  }
   button {
     padding: 15px 20px;
   }
@@ -779,13 +887,13 @@ footer p {
     font-size: 25px;
   }
   .choice {
-    width: 60%;
-    line-height: 30px;
+    width: 56%;
+    line-height: 40px;
   }
   .result {
     width: 65%;
     height: 65%;
-    border: 15px solid #f0f0f0;
+    border: 15px solid #e2e2e2;
   }
   footer p {
     font-size: 11px;
