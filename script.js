@@ -1,7 +1,3 @@
-//How to change background colour when user changes their answer.
-// error messsage forEach loop bug
-// Where else can I dry?
-
 $(document).ready(function(){
 
 
@@ -14,22 +10,9 @@ $(document).ready(function(){
             600,
             'linear'
         )
-    }); //Retrieved from https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
-
-
-// When option is selected, change background colour
-    $("input[type='radio']").change(function(){
-        if($(this).is(":checked")){
-            $(this).parent().toggleClass("greyBackground"); 
-        }
-        else if($(this).is(":not(:checked)")){
-            $(this).parent().removeClass("greyBackground");  
-        }
     });
 
-
 //Auto-scroll for each question when answered
-
     //Q1 to Q2
     $('input[name=where]').on('click', function(){
         $('html, body').animate(
@@ -95,25 +78,8 @@ $(document).ready(function(){
         const userWeather = $('input[name=weather]:checked').val();
         const userStyle = $('input[name=style]:checked').val();
         const userColours = $('input[name=colours]:checked').val();  
-        
-        //function defines the if statment
-        //switch
 
         //error msg display
-        // const errorDisplay = [
-        //     {userInput: userGender, error: $('.genderError')},
-        //     {userInput: userWhere, error: $('.whereError')},
-        //     {userInput: userWeather, error: $('.weatherError')},
-        //     {userInput: userStyle, error: $('.styleError')},
-        //     {userInput: userColours, error: $('.colourError')}
-        // ];
-
-        // errorDisplay.forEach((userInput, error) => {
-        //     if(userInput === undefined){
-        //         error.fadeIn(1500);
-        //     }
-        // });
-        
 
         if(userGender === undefined){
             $('.genderError').fadeIn(1500);
@@ -121,7 +87,7 @@ $(document).ready(function(){
                 {
                     scrollTop: $($('#gender')).offset().top,
                 },
-                300
+                10
             )
         }
 
@@ -131,7 +97,7 @@ $(document).ready(function(){
                 {
                     scrollTop: $($('#colours')).offset().top,
                 },
-                300
+                10
             )
         }
         
@@ -141,7 +107,7 @@ $(document).ready(function(){
                 {
                     scrollTop: $($('#weather')).offset().top,
                 },
-                300
+                10
             )
         }
 
@@ -151,7 +117,7 @@ $(document).ready(function(){
                 {
                     scrollTop: $($('#style')).offset().top,
                 },
-                300
+                10
             )
         }
         
@@ -161,7 +127,7 @@ $(document).ready(function(){
                 {
                     scrollTop: $($('#where')).offset().top,
                 },
-                300
+                10
             )
         }
 
@@ -343,7 +309,7 @@ $(document).ready(function(){
         // clear all user inputs
         $('form')[0].reset();
         $('form').find('input:hidden').val('');
-        $('input[type="radio"]').prop('checked', false);  //https://stackoverflow.com/questions/50159793/jquery-javascript-reset-clear-radio-button-value-and-un-checke-the-element
+        $('input[type="radio"]').prop('checked', false);
         $('h2').fadeOut();
         $(`.${finalResult}`).fadeOut();
         $('.error').fadeOut();

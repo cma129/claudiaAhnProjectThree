@@ -19,7 +19,17 @@ header {
 }
 
 .logo {
-    width: 40px;
+    width: 30px;
+}
+
+.logo,
+i {
+    transition: all 0.5s linear;
+}
+
+.logo:hover,
+.logo:focus {
+    transform: rotateY(180deg);
 }
 
 .icons {
@@ -39,10 +49,6 @@ header {
 
 .icons li:last-of-type {
     margin-right: 0;
-}
-
-i {
-    transition: all 0.3s linear;
 }
 
 .icons i:hover,

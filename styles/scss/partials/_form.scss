@@ -40,12 +40,8 @@ input[type=radio] {
 }
 
 .choice:hover,
-.choice:focus-within {
+.choice:focus {
     background-color: #cacaca65;
-}
-
-.greyBackground{
-    background-color: #cacaca65; 
 }
 
 .error {
@@ -53,14 +49,14 @@ input[type=radio] {
     color: $backgroundColor;
     width: 45%;
     border-radius: 15px;
-    font-family: 'Bangers', cursive;
+    font-family: 'Poppins', sans-serif;
     position: relative;
     left: 70%;
     bottom: 30px;
     line-height: 30px;
     padding: 20px;
     display: none;
-    font-size: 27px;
+    font-size: 20px;
 }
 
 button {
