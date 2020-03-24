@@ -326,3 +326,18 @@
         font-size: 9px;
     }
 }
+
+/* Mobile landscape */
+@media(max-height: 420px) {
+    .intro {
+        display: none;
+    }
+
+    .start {
+        margin: 0 auto;
+    }
+
+    .qContainer {
+        height: auto;
+    }
+}

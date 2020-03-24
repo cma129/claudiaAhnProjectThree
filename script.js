@@ -145,6 +145,8 @@ $(document).ready(function(){
             $('.results').fadeOut();
         }
 
+        $('.error').fadeOut();
+
         //Grab user's choices
         const userGender = $('input[name=gender]:checked').val();
         const userWhere = $('input[name=where]:checked').val();
