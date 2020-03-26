@@ -40,7 +40,7 @@ input[type=radio] {
 }
 
 .choice:hover,
-.choice:focus {
+.choice:focus-within {
     background-color: #cacaca65;
 }
 
@@ -70,7 +70,7 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus-within {
     background-color: $primaryColor;
     color: $secondaryColor;
 }

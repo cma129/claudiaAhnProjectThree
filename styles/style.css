@@ -430,7 +430,7 @@ i {
 }
 
 .logo:hover,
-.logo:focus {
+.logo:focus-within {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -463,7 +463,7 @@ i {
 }
 
 .icons i:hover,
-.icons i:focus {
+.icons i:focus-within {
   color: #e2e2e2;
   font-size: 35px;
 }
@@ -550,7 +550,7 @@ input[type=radio] {
 }
 
 .choice:hover,
-.choice:focus {
+.choice:focus-within {
   background-color: #cacaca65;
 }
 
@@ -581,7 +581,7 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus-within {
   background-color: #222222;
   color: #e2e2e2;
 }
@@ -734,7 +734,7 @@ footer div {
     margin-right: 15px;
   }
   .icons i:hover,
-  .icons i:focus {
+  .icons i:focus-within {
     font-size: 27px;
   }
   h1 {
@@ -832,7 +832,7 @@ footer div {
     margin-right: 7px;
   }
   .icons i:hover,
-  .icons i:focus {
+  .icons i:focus-within {
     font-size: 25px;
   }
   .intro {
