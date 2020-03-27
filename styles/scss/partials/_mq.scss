@@ -299,12 +299,23 @@
         margin-right: 2px;
     }
 
+    h1 {
+        font-size: 27px;
+        line-height: 28px;
+        margin-top: 0;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
     button {
         padding: 15px 20px;
     }
 
     .start {
         width: 90%;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -322,6 +333,10 @@
         border: 15px solid $secondaryColor;
     }
 
+    .toTop {
+        font-size: 15px;
+    }
+
     footer p,
     .amanda {
         font-size: 9px;
@@ -330,6 +345,10 @@
 
 /* Mobile landscape */
 @media(max-height: 420px) {
+    h1 {
+        margin: 0 auto;
+    }
+
     .intro {
         display: none;
     }
@@ -340,5 +359,9 @@
 
     .qContainer {
         height: auto;
+    }
+
+    .choice {
+        margin: 3% auto;
     }
 }
