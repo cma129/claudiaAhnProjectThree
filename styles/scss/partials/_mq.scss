@@ -368,6 +368,20 @@
 
 // Browser compatibility
 
+// Edge
+@supports (-ms-ime-align:auto) {
+    .choice {
+        display: flex;
+    }
+
+    input[type=radio] {
+        opacity: 1;
+        position: initial;
+        display: initial;
+        width: 10%;
+    }
+}
+
 // Safari
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
     .logo {

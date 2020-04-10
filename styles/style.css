@@ -933,7 +933,6 @@ footer div {
   }
 }
 
-/* Mobile landscape */
 @media (max-height: 420px) {
   h1 {
     margin: 0 auto;
@@ -949,5 +948,33 @@ footer div {
   }
   .choice {
     margin: 3% auto;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  input[type=radio] {
+    opacity: 1;
+    position: initial;
+    display: initial;
+    width: 10%;
+  }
+}
+
+@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+  .logo {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .logo {
+    -webkit-transition: none;
+    transition: none;
   }
 }
