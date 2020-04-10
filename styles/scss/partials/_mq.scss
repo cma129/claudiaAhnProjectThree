@@ -387,10 +387,20 @@
     .logo {
         transition: none;
     }
+
+    .logo:hover,
+    .logo:focus-within {
+        transform: none;
+    }
 }
 
-@media not all and (min-resolution:.001dpcm) { 
+@media not all and (min-resolution:.001dpcm) {
     .logo {
         transition: none;
+    }
+
+    .logo:hover,
+    .logo:focus-within {
+        transform: none;
     }
 }
