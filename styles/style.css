@@ -967,24 +967,12 @@ footer div {
 
 @media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
   .logo {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .logo:hover,
-  .logo:focus-within {
-    -webkit-transform: none;
-            transform: none;
+    display: none;
   }
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
   .logo {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .logo:hover,
-  .logo:focus-within {
-    -webkit-transform: none;
-            transform: none;
+    display: none;
   }
 }

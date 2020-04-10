@@ -385,22 +385,12 @@
 // Safari
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
     .logo {
-        transition: none;
-    }
-
-    .logo:hover,
-    .logo:focus-within {
-        transform: none;
+        display: none;
     }
 }
 
 @media not all and (min-resolution:.001dpcm) {
     .logo {
-        transition: none;
-    }
-
-    .logo:hover,
-    .logo:focus-within {
-        transform: none;
+        display: none;
     }
 }
