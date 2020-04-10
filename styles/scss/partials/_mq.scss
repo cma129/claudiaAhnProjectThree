@@ -343,7 +343,7 @@
     }
 }
 
-/* Mobile landscape */
+// Mobile landscape
 @media(max-height: 420px) {
     h1 {
         margin: 0 auto;
@@ -363,5 +363,20 @@
 
     .choice {
         margin: 3% auto;
+    }
+}
+
+// Browser compatibility
+
+// Safari
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    .logo {
+        transition: none;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    .logo {
+        transition: none;
     }
 }
