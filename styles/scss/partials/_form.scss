@@ -49,7 +49,7 @@ label {
 }
 
 .choice:hover,
-.choice:hover {
+.choice:focus-within {
     background-color: $selectedColor;
 }
 

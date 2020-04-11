@@ -563,7 +563,7 @@ label {
 }
 
 .choice:hover,
-.choice:hover {
+.choice:focus-within {
   background-color: #d8d8d8;
 }
 
