@@ -1,9 +1,15 @@
-.result {
+.result img {
     margin: 3px auto;
     width: 30%;
     height: 30%;
     border-radius: 15px;
     border: 18px solid $secondaryColor;
+    transition: opacity 0.1s linear;
+}
+
+.result:hover img,
+.result:focus-within img {
+    opacity: 0.7;
 }
 
 .results p {

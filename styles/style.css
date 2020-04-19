@@ -371,6 +371,11 @@ html {
   outline: none;
 }
 
+button,
+label {
+  cursor: pointer;
+}
+
 #particlesJs canvas {
   display: block;
   -webkit-transform: scale(1);
@@ -609,12 +614,19 @@ h2 {
   margin: 100px auto 20px;
 }
 
-.result {
+.result img {
   margin: 3px auto;
   width: 30%;
   height: 30%;
   border-radius: 15px;
   border: 18px solid #e2e2e2;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.result:hover img,
+.result:focus-within img {
+  opacity: 0.7;
 }
 
 .results p {
@@ -690,7 +702,7 @@ footer div {
   button {
     font-size: 26px;
   }
-  .result {
+  .result img {
     width: 27%;
     height: 27%;
   }
@@ -730,7 +742,7 @@ footer div {
   h2 {
     font-size: 30px;
   }
-  .result {
+  .result img {
     width: 30%;
     height: 30%;
   }
@@ -777,7 +789,7 @@ footer div {
     line-height: 28px;
     font-size: 15px;
   }
-  .result {
+  .result img {
     width: 35%;
     height: 35%;
   }
@@ -819,7 +831,7 @@ footer div {
     line-height: 27px;
     font-size: 14px;
   }
-  .result {
+  .result img {
     width: 40%;
     height: 40%;
   }
@@ -875,7 +887,7 @@ footer div {
     font-size: 13px;
     padding: 10px;
   }
-  .result {
+  .result img {
     width: 60%;
     height: 60%;
     border: 17px solid #e2e2e2;
@@ -919,7 +931,7 @@ footer div {
     width: 56%;
     line-height: 40px;
   }
-  .result {
+  .result img {
     width: 65%;
     height: 65%;
     border: 15px solid #e2e2e2;

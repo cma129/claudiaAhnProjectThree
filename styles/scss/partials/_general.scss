@@ -15,3 +15,8 @@ html {
 *:focus-within {
     outline: none;
 }
+
+button,
+label {
+    cursor: pointer;
+}
